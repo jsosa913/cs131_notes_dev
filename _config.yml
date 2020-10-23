@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: /cs131_notes_dev # the subpath of your site, e.g. /blog
 
 ########### ONLY CHANGE THESE FIELDS
-email = jsosa913@stanford.edu
+email: jsosa913@stanford.edu
 # replace with your own email for build notifications or leave it blank
 url: "https://jsosa913.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 ###########
