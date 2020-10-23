@@ -49,10 +49,10 @@ Conversely, if we have the allocations, we can calculate the cluster center by c
 ## 1.2 K-Means Algorithm
 1. Initialize cluster centers $c_1, ...., c_k$ according to an initialization metric
   - Commonly used: random initialization to points
-2. compute: $\delta^t $ by assigning each point to the nearest center
+2. compute: $\delta^t$ by assigning each point to the nearest center
 $$\delta^t = argmin_\delta\frac{1}{N}\sum^N_j \sum^K_i \delta^{t-1}_{ij}(c^{t-1}_i-x_j)^2$$
-3. Compute $\delta^t $ by assigning each point to the center of minimal distance to that point
-$$ \delta^t = argmin_\delta\frac{1}{N}\sum^N_j \sum^K_i \delta^{t-1}_{ij}(c^{t-1}_i-x_j)^2 $$
+3. Compute $\delta^t$ by assigning each point to the center of minimal distance to that point
+$$ \delta^t = argmin_\delta\frac{1}{N}\sum^N_j \sum^K_i \delta^{t-1}_{ij}(c^{t-1}_i-x_j)^2$$
 4. compute $c^t$: update cluster centers as the means of the points
 $$c^t = argmin_c \frac{1}{N}\sum^N_j \sum^K_i \delta^t_{ij}(c^{t-1}_i-x_j)^2$$
 5. Repeat steps 2-4 until convergence or stop
